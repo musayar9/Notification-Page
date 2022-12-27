@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+html{
+    font-size: 16px;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.container{
+    width: 1440px;
+  margin: 5rem;
+  padding: 3rem;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.messageCount{
+font-weight: 800;
+font-size: 1.6rem;
+padding-bottom: 2rem;
+}
+
+.read{
+    cursor:grab;
+    font-weight: 500;
+    font-size: 1rem;
+    text-align: center;
+    color:hsl(219, 12%, 42%);
+}
+
+.read:hover{
+    color:  hsl(219, 85%, 26%);
+}
+
+#message-card{
+    display: flex;
+    align-items: center;
+    width: 10,9rem;
+    height: 4.5rem;
+    margin-top: 2rem;
+   margin-bottom: 5rem;
+
+
+
+}
+
+
+
+.message{
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+  
+    padding: 1rem;
+    border-radius: .5rem;
+    cursor: grab;
+}
+
+
+.message-color{
+    background-color: hsl(205, 33%, 90%);
+}
+
+.image{
+    flex-shrink: 0;
+}
+
+.message-body{
+    flex-grow: 1;
+    margin-left: 1.5rem;
+    margin-right: 2rem;
+    margin-top: 1.5rem;
+
+}
+
+.answer-message{
+    display: flex;
+    width: 90%;
+    border:1px solid hsl(205, 33%, 90%);
+    /* height: 25%; */
+    padding: 1.6rem;
+    margin-left: 5rem;
+    margin-bottom: 4.0rem;
+    border-radius: 5px;
+    flex-shrink: 0;
+    cursor: pointer;
+    
+}
+.answer-message:hover{
+    background-color: hsl(205, 33%, 90%);
+}
+
+.time{
+    margin-top: -1rem;
+    color:  hsl(219, 14%, 63%);
+}
+
+a{
+    text-decoration: none;
+    font-weight: 800;
+    color: hsl(219, 12%, 42%);
+    cursor: grab;
+}
+
+a:hover{
+color:hsl(219, 85%, 26%);
+}
+
+.fa-circle{
+    color: hsl(1, 90%, 64%);
+    margin-left: 0.5rem;
+}
+
+.smallMessage{
+color:  hsl(219, 12%, 42%);
+font-size: 0.9rem;
+}
+
+@media screen and (max-width:375px) {
+    html{
+        font-size: 12px;
+    }
+
+    .container{
+     
+           
+          margin: 1rem;
+          padding: 1rem;
+     
+        
+    }
+    #message-card{
+        display: flex;
+        margin-top: 6rem;
+        margin-bottom: 5rem;
+    }
+
+    .message{
+        
+        padding: 0.8rem;
+    }
+
+    img{
+        width: 5rem;
+        height: 5rem;
+        margin-top: 1.2rem;
+    }
+
+
+.answer-message{
+    width: 75%;
+    margin-left:4rem;
+}
+
+}
