@@ -49,7 +49,7 @@ padding-bottom: 2rem;
     color:  hsl(219, 85%, 26%);
 }
 
-#message-card{
+.message-card{
     display: flex;
     align-items: center;
     width: 10,9rem;
