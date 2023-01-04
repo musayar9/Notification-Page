@@ -1,6 +1,6 @@
 const count = document.querySelector(".notice");
 const countMessage = document.querySelectorAll(".message-color")
-const icon = document.querySelectorAll(".fa-solid")
+
 
 $(document).ready(function(){
     $(".read").click(function(){
@@ -35,7 +35,7 @@ countMessage.forEach((message)=>{
         message.classList.toggle("message-color")
         const  newMessage = document.querySelectorAll(".message-color")
         count.innerText=newMessage.length
-        icon.classList.toggleClass()
+   
 
 
         
