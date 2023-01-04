@@ -4,7 +4,7 @@ const icon = document.querySelectorAll(".fa-solid")
 
 $(document).ready(function(){
     $(".read").click(function(){
-        $("#Mark, #Angela, #Jacop").toggleClass("message-color")
+        $("#personOne, #personTwo, #personThree").toggleClass("message-color")
         const  newMessage = document.querySelectorAll(".message-color")
         count.innerText=newMessage.length
         $(".fa-solid").toggle()
@@ -14,16 +14,16 @@ $(document).ready(function(){
     })
 })
 $(document).ready(function(){
-    $("#Mark").click(function(){
-        $(".mark").toggle()
+    $("#personOne").click(function(){
+        $("#iconOne").toggle()
     })
 
-    $("#Angela").click(function(){
-        $(".angela").toggle()
+    $("#personTwo").click(function(){
+        $("#iconTwo").toggle()
     })
 
-    $("#Jacop").click(function(){
-        $(".jacop").toggle()
+    $("#personThree").click(function(){
+        $("#iconThree").toggle()
     })
 })
 
